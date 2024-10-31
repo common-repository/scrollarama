@@ -1,0 +1,54 @@
+/* 
+    Document   : pr_widget_style
+    Created on : 29-Mar-2011, 15:17:43
+    Author     : Adam Maltpress
+    Description:
+        Styles for Post Rotator widget
+        Edit these styles as you see fit, but pay attention to the notes...
+*/
+
+
+/* you can edit these bits, but probably best not to - they affect the slider behaviour*/
+.pr_side_slider {
+    display: block;
+    overflow: hidden;
+}
+
+.pr_single_story {
+    overflow: hidden;
+    height: 100%;
+    vertical-align: bottom;
+    display: table-cell;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.pr_wrapper {
+    position: absolute;
+    bottom: 0px;
+}
+
+
+/* these bits you probably should edit in order to fit in to your theme */
+
+.pr_wrapper {
+    background: #000;
+    display: block;
+    width: 100%;
+
+    /* slightly faded BG for text so white shows against either light or dark BG images */
+    background: url(../images/black60.png); /* you can change this to white60.png, provided, or create your own semi-transparent png */
+    /*remember IE6 doesn't handle transparent PNGs... but then again @link http://www.theie6countdown.com/ */
+}
+
+
+.pr_wrapper h3 a:link, .pr_wrapper h3 a:visited, .pr_wrapper p, .pr_wrapper p a:link,.pr_wrapper p a:visited  {
+    color: #fff;
+    margin: 0 !important;
+}
+
+.pr_wrapper h3, .pr_wrapper p {
+    padding: 0px 10px 0px 10px;
+}
+
